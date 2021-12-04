@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pomodoro</title>
+</head>
+<body>
+ <h2>Pomodoro <i class="fa fa-clock-o"></i></h2>
+ <h4>Set a focus time</h4>
+
+<div id="container"> 
+    <div id="labels">
+    <p id="hourLabel" class="label">Hours</p>
+    <p id="minLabel" class="label">Minutes</p>
+    <p id="secLabel" class="label">Seconds</p>
+</div>
+    <div id="timer">
+    <input type="hour" name="number" id="hour" max="99" min="0" value="0" class="time">
+    <p id="p1" class="semicolon">:</p>
+    <input type="minute" name="number" id="mins" max="60" min="0" value="0" class="time">
+    <p id="p2" class="semicolon">:</p>
+    <input type="seconds" name="number" id="secs" max="60" min="0" value="0" class="time"> <br>
+</div>
+<div id="btns">
+    <button id="start" class="btn">Start</button>
+    <button id="restart" class="btn">Restart</button>
+</div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
